@@ -816,3 +816,133 @@
   footer .container .content .social p {
     font-weight: bold;
   }
+  /* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  header {
+    height: 8vh;
+  }
+
+  header .container .content nav {
+    gap: 1rem;
+  }
+
+  header .container .content .extra-nav a {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero .container .content .text h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .hero .container .content .text .row-2 {
+    margin-left: 0;
+  }
+
+  .hero .container .content .arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero .container .content .short-info {
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about .container .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about .container .content .title,
+  .about .container .content .profile-container,
+  .about .container .content .about-me {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .project .container .content .project-area {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project .container .content .project-area .projects {
+    width: 100%;
+    height: 250px;
+  }
+
+  .contact .container .content .contact-area {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact .container .content .contact-area .left-side,
+  .contact .container .content .contact-area .right-side {
+    width: 100%;
+  }
+
+  .contact .container .content .contact-area .left-side h1 {
+    font-size: 2.5rem;
+    transform: scale(1, 1.2);
+    margin-left: 0;
+  }
+}
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem 3rem;
+  }
+
+  header .container .content nav {
+    gap: 2rem;
+  }
+
+  header .container .content .extra-nav a {
+    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero .container .content .text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .hero .container .content .text .row-2 {
+    margin-left: -3rem;
+  }
+
+  .about .container .content .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .project .container .content .project-area {
+    height: 400px;
+  }
+
+  .project .container .content .project-area .projects {
+    border-radius: 32px;
+  }
+}
+
+/* Десктопы (широкие экраны > 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    padding: 2rem 10rem;
+  }
+
+  header {
+    height: 12vh;
+  }
+
+  .hero .container .content .text h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+}
